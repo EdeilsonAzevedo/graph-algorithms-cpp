@@ -1,0 +1,11 @@
+C125-9.mtx 151
+MANN-a9.mtx 86
+brock200-1.mtx 225
+brock200-2.mtx 241
+exemp.mtx 14
+hamming6-2.mtx 96
+hamming6-4.mtx 312
+johnson16-2-4.mtx 161
+johnson8-2-4.mtx 491
+johnson8-4-4.mtx 115
+keller4.mtx 202
