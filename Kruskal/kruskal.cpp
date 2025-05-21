@@ -128,14 +128,15 @@ int main(int argc, char* argv[]) {
     auto edges = read_and_sort_edges(infile, n, m);
     auto [cost, mst] = kruskal(n, edges);
 
-    (*out) << cost << endl;
     if (flag_s) {
         for (auto& [w,u,v] : mst) {
-            // imprime em 1-based
             (*out) << "(" << u+1 << "," << v+1 << ") ";
         }
         (*out) << endl;
+    } else {
+        (*out) << cost << endl;
     }
+    
 
     return 0;
 }
