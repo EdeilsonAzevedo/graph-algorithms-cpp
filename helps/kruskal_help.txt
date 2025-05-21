@@ -1,0 +1,6 @@
+Opções obrigatórias:
+  -f <arquivo>    caminho para o arquivo de entrada (grafo)
+Opções adicionais:
+  -o <arquivo>    redireciona a saída para o <arquivo>
+  -s              imprime a árvore geradora mínima (lista de arestas)
+  -h              mostra o help
