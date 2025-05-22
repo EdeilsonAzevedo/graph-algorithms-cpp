@@ -32,7 +32,7 @@ int main(int argc, char **args)
             return 1;
         }
 
-        // Indicar arquivo em que a saida sera armazenada (opcional)
+        
         if (!strcmp(args[i], "-o") && i != argc - 1)
         {
             outputPath = args[++i];
@@ -43,7 +43,7 @@ int main(int argc, char **args)
             return 1;
         }
 
-        // Indica o vertice inicial usado no algoritmo
+        
         if (!strcmp(args[i], "-i") && i != argc - 1)
         {
             initialVert = stoi(args[++i]);
