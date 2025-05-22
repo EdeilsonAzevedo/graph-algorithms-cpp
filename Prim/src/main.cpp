@@ -18,10 +18,10 @@ int main(int argc, char **args)
     string inputPath, outputPath;
     int solution = 0, initialVert = 1;
 
-    // Receber opcoes do usuario
+    
     for (int i = 0; i < argc; i++)
     {
-        // Indicar arquivo que contem o grafo de entrada
+       
         if (!strcmp(args[i], "-f") && i != argc - 1)
         {
             inputPath = args[++i];
@@ -32,7 +32,7 @@ int main(int argc, char **args)
             return 1;
         }
 
-        // Indicar arquivo em que a saida sera armazenada (opcional)
+        
         if (!strcmp(args[i], "-o") && i != argc - 1)
         {
             outputPath = args[++i];
@@ -43,7 +43,7 @@ int main(int argc, char **args)
             return 1;
         }
 
-        // Indica o vertice inicial usado no algoritmo
+       
         if (!strcmp(args[i], "-i") && i != argc - 1)
         {
             initialVert = stoi(args[++i]);
@@ -54,25 +54,22 @@ int main(int argc, char **args)
             return 1;
         }
 
-        // Verifica se o usuario quer a solucao
+        
         if (!strcmp(args[i], "-s"))
         {
             solution = 1;
         }
 
-        // Verifica se o usuario precisa do helper
+        
         if (!strcmp(args[i], "-h"))
         {
             printHelper();
         }
     }
 
-    // if (!initialVert) {
-    //     printf("Um vertice inicial precisa ser definido (-i <vertice>)\n");
-    //     return 1;
-    // }
+   
 
-    // Ler inputs do arquivo informado (-f <arquivo>)
+    
     ifstream inputFile(inputPath);
 
     if (!inputFile.is_open())
