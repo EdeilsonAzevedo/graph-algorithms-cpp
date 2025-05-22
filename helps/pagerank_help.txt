@@ -1,0 +1,7 @@
+Opções obrigatórias:
+-f <arquivo>    caminho para o arquivo de entrada (grafo)
+Opções adicionais:
+-o <arquivo>    redireciona a saída para o <arquivo>
+-d <damping>    Fator de amortecimento (padrão: 0.85, intervalo: [0, 1])
+-k <n>          Mostra os n vértices mais bem ranqueados (padrão: 10)
+-h              Mostra o help
