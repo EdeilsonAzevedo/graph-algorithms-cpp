@@ -1,0 +1,5 @@
+Opções obrigatórias:
+  -f <arquivo>    caminho para o arquivo de entrada (grafo)
+Opções adicionais:
+  -o <arquivo>    redireciona a saída para o <arquivo>
+  -h              mostra o help
