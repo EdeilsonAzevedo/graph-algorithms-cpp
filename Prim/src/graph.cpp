@@ -11,9 +11,8 @@
 using namespace std;
 
 // A estrutura em si está definida na header file (/include/graph.h)
-// Aqui suas funcoes serao definidas
 
-// Construtor
+
 Graph::Graph(int V)
 {
     this->V = V;
@@ -75,7 +74,7 @@ void Graph::prim(int initialVert, int solution, string outputPath)
         mstEdges.push_back(make_pair(parent[i], i));
     }
 
-    // Caso o usuario nao queira a solucao, printamos apenas o custo total
+   
     if (!solution && outfile.is_open())
     {
         outfile << totalWeight << endl;
@@ -89,7 +88,7 @@ void Graph::prim(int initialVert, int solution, string outputPath)
     if (!solution)
         return;
 
-    // No caso da solucao, exibidos as arestas da AGM
+   
     for (auto edge : mstEdges)
     {
         if (outfile.is_open())
