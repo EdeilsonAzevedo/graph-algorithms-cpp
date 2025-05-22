@@ -18,10 +18,10 @@ int main(int argc, char **args)
     string inputPath, outputPath;
     int initialVert = 1;
 
-    // Receber opcoes do usuario
+    
     for (int i = 0; i < argc; i++)
     {
-        // Indicar arquivo que contem o grafo de entrada
+        
         if (!strcmp(args[i], "-f") && i != argc - 1)
         {
             inputPath = args[++i];
@@ -54,14 +54,14 @@ int main(int argc, char **args)
             return 1;
         }
 
-        // Verifica se o usuario precisa do helper
+        
         if (!strcmp(args[i], "-h"))
         {
             printHelper();
         }
     }
 
-    // Ler inputs do arquivo informado (-f <arquivo>)
+    
     if (inputPath.empty()) {
         printf("Por favor, informe um arquivo de entrada (-f <arquivo>)\n");
         return 1;
